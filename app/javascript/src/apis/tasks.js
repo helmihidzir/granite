@@ -6,8 +6,11 @@ const create = payload =>
     task: payload,
   });
 
+const show = slug => axios.get(`/tasks/${slug}`);
+
 const tasksApi = {
   list,
+  show,
   create,
 };
 
