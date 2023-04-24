@@ -67,6 +67,7 @@ end
 # For compiling and bundling JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker"
 
+gem "bcrypt", "~> 3.1.13"
 gem "erb_lint", require: false
 gem "pry-byebug"
 gem "react-rails"
