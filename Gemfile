@@ -74,6 +74,7 @@ gem "webpacker"
 gem "bcrypt", "~> 3.1.13"
 gem "erb_lint", require: false
 gem "pry-byebug"
+gem "pundit"
 gem "react-rails"
 gem "responders"
 gem "simplecov", require: false, group: :test
