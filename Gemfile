@@ -72,3 +72,4 @@ gem "erb_lint", require: false
 gem "pry-byebug"
 gem "react-rails"
 gem "responders"
+gem "simplecov", require: false, group: :test
