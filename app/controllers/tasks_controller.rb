@@ -34,7 +34,7 @@ class TasksController < ApplicationController
   def destroy
     authorize @task
     @task.destroy!
-    render_notice(t "successfully_deleted") unless params.key?(:quiet)
+    render_notice(t "successfully_deleted", entity: "Task") unless params.key?(:quiet)
   end
 
   private
