@@ -72,9 +72,12 @@ end
 gem "webpacker"
 
 gem "bcrypt", "~> 3.1.13"
+gem "bundler-audit", require: false
 gem "erb_lint", require: false
 gem "pry-byebug"
 gem "pundit"
 gem "react-rails"
 gem "responders"
+gem "ruby_audit", require: false
+gem "sidekiq", "<7"
 gem "simplecov", require: false, group: :test
