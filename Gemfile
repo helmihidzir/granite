@@ -79,7 +79,7 @@ gem "pundit"
 gem "react-rails"
 gem "responders"
 gem "ruby_audit", require: false
-gem "sidekiq", "<7"
+gem "sidekiq", "~> 6"
 gem "simplecov", require: false, group: :test
 # For periodic sidekiq jobs
 gem "sidekiq-cron"
@@ -93,3 +93,5 @@ gem "wkhtmltopdf-binary"
 gem "google-cloud-storage"
 # To load the environment variables
 gem "dotenv-rails"
+# To fix Psych::BadAlias: Unknown alias: default
+gem "psych", "< 4"
