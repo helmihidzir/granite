@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_secure_token :authentication_token
   has_many :user_notifications, dependent: :destroy, foreign_key: :user_id
   has_one :preference, dependent: :destroy, foreign_key: :user_id, class_name: "Preference"
+  has_one_attached :report
 
   validates :name, presence: true, length: { maximum: 35 }
   validates :email, presence: true,

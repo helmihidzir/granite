@@ -83,6 +83,13 @@ gem "sidekiq", "<7"
 gem "simplecov", require: false, group: :test
 # For periodic sidekiq jobs
 gem "sidekiq-cron"
-
 # For opening mails in development env
 gem "letter_opener", group: :development
+# PDF generation gem
+gem "wicked_pdf"
+# wicked_pdf uses the following binary
+gem "wkhtmltopdf-binary"
+# Required by Active Storage to use the GCS
+gem "google-cloud-storage"
+# To load the environment variables
+gem "dotenv-rails"
